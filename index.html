@@ -75,12 +75,12 @@
   .hero { padding-block: clamp(2.5rem, 6vw, 5rem) clamp(3rem, 7vw, 5.5rem); }
   .hero .wrap { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
   @media (max-width: 880px) { .hero .wrap { grid-template-columns: 1fr; } }
-  .hero h1 { font-size: clamp(2.5rem, 5.4vw, 4rem); color: var(--gold); }
+  .hero h1 { font-size: clamp(2.2rem, 4.2vw, 3.3rem); color: var(--gold); }
   .hero .lead { font-size: 1.25rem; max-width: 32em; margin: 1.3rem 0 2rem; opacity: .92; }
   .hero small { display: block; margin-top: 1.2rem; opacity: .75; }
-  .art { position: relative; max-width: 440px; width: 100%; margin-inline: auto; padding-bottom: 3rem; }
+  .art { position: relative; max-width: 440px; width: 100%; margin-inline: auto; padding-bottom: 0; }
   .art > svg { display: block; width: 100%; height: auto; border-radius: 18px; box-shadow: 0 24px 60px rgba(0,0,0,.35); }
-  .report { position: absolute; left: -2.2rem; right: 2rem; bottom: 0; background: #fffdf9; color: #10213f; border-radius: 14px; padding: 1rem 1.1rem .9rem; box-shadow: 0 16px 40px rgba(0,0,0,.35); border-top: 3px solid var(--gold); }
+  .report { position: relative; margin: -4rem 1.2rem 0; background: #fffdf9; color: #10213f; border-radius: 14px; padding: 1rem 1.1rem .9rem; box-shadow: 0 16px 40px rgba(0,0,0,.35); border-top: 3px solid var(--gold); }
   .report header { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: .3rem; }
   .report h3 { font-size: 1.05rem; }
   .report .tag { font-size: .8rem; color: #5a6479; }
@@ -93,7 +93,7 @@
   .report .m svg { width: .7rem; height: .7rem; }
   .report li.flag .m { background: #efd6d1; color: #7a3a33; }
   .report footer { margin-top: .4rem; padding: .5rem .7rem; background: #f4ede3; border-radius: 8px; font-size: .82rem; }
-  @media (max-width: 880px) { .report { position: static; margin: -2.5rem 1rem 0; } .art { padding-bottom: 0; } }
+  
   @media (prefers-reduced-motion: no-preference) {
     .report .m svg { stroke-dasharray: 20; stroke-dashoffset: 20; animation: tick .5s ease forwards; }
     .report li:nth-child(1) .m svg { animation-delay: .3s; }
@@ -266,7 +266,7 @@
 </svg>
 
         <aside class="report" aria-label="Ejemplo de informe">
-          <header><h3 data-i18n="r_title">Informe de visita</h3><span class="tag" data-i18n="r_tag">Ejemplo</span></header>
+          <header><h3 data-i18n="r_title">Informe de visita</h3></header>
           <ul>
             <li><span class="m"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><div><b data-i18n="r1">Agua y grifos</b><span class="d" data-i18n="r1d">Todos abren y cierran, sin fugas visibles.</span></div></li><li><span class="m"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><div><b data-i18n="r2">Electricidad</b><span class="d" data-i18n="r2d">Cuadro en orden, nevera y router funcionando.</span></div></li><li><span class="m"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><div><b data-i18n="r3">Puertas, ventanas y persianas</b><span class="d" data-i18n="r3d">Cerradas y sin señales de intento de acceso.</span></div></li><li><span class="m"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><div><b data-i18n="r4">Jardín y piscina</b><span class="d" data-i18n="r4d">Hojas retiradas de la terraza. Piscina con el agua limpia.</span></div></li><li class="flag"><span class="m"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><div><b data-i18n="r5">Humedad</b><span class="d" data-i18n="r5d">Mancha nueva en el techo del baño 2. Foto adjunta.</span></div></li>
           </ul>
